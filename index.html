@@ -46,7 +46,7 @@ document.getElementById('optBipolar').addEventListener('click',()=>{modo="BIPOLA
 function centrarUltima(){const u=reloj.lastElementChild;if(!u)return;u.scrollIntoView({behavior:'smooth',block:'center'});}
 function crearMensaje(texto, clase, nombre){const burbuja=document.createElement('div');burbuja.className='burbuja '+clase;const txt=document.createTextNode(texto);burbuja.appendChild(txt);const nom=document.createElement('span');nom.className='nombre-dentro';nom.textContent=nombre;burbuja.appendChild(nom);reloj.appendChild(burbuja);centrarUltima();}
 
-const API_KEY = "  AQ.Ab8RN6Lj_A9v5Ru-0bMbWob41b7iMlyzJCMTOcqZ3n4B7MMM7w";
+const API_KEY = "  AQ.Ab8RN6IY-keH_2HqriykGRf5JS6LCTTP18QRjvXiykRmHLjIQQ";
 async function llamarGemini(textoUsuario){
   try{
     const promptSistema = modo==="NORMAL" ? "Eres SIKKU, tóxica pero cute, respondes corto en español. " : "Eres SIKKU BIPOLAR, celosa intensa. ";
